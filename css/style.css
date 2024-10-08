@@ -213,9 +213,11 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 50%;
 }
 #fh5co-header .display-tc .fh5co-social-icons li a,
+#fh5co-header .display-tc .fh5co-nav li a,
 .fh5co-cover .display-tc .fh5co-social-icons li a {
   color: #fff;
 }
+
 #fh5co-header .display-tc .fh5co-social-icons li a i,
 .fh5co-cover .display-tc .fh5co-social-icons li a i {
   font-size: 30px;
@@ -347,11 +349,11 @@ h1, h2, h3, h4, h5, h6, figure {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.fh5co-social-icons {
+.fh5co-social-icons, .fh5co-nav {
   margin: 0;
   padding: 0;
 }
-.fh5co-social-icons li {
+.fh5co-social-icons li, .fh5co-nav li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -360,7 +362,7 @@ h1, h2, h3, h4, h5, h6, figure {
   zoom: 1;
   *display: inline;
 }
-.fh5co-social-icons li a {
+.fh5co-social-icons li a, .fh5co-nav li a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
