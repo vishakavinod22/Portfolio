@@ -109,7 +109,7 @@
 			lineWidth: 4,
 			lineCap: 'butt',
 			barColor: '#fff',
-			trackColor:	"#f5f5f5",
+			trackColor:	"#ff9000",
 			size: 160,
 			animate: 1000
 		});
