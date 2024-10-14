@@ -97,8 +97,9 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 600px;
   width: 100%;
 }
+
 #fh5co-header .overlay,
-.fh5co-cover .overlay {
+.fh5co-cover .overlay  {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -106,6 +107,7 @@ h1, h2, h3, h4, h5, h6, figure {
   right: 0;
   background: rgba(255, 144, 0, 0.9);
 }
+
 #fh5co-header .display-t,
 .fh5co-cover .display-t {
   width: 100%;
@@ -295,6 +297,11 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 7em 0;
   clear: both;
 }
+
+#fh5co-skills{
+  padding-bottom: 0;
+}
+
 @media screen and (max-width: 768px) {
   #fh5co-about,
   #fh5co-resume,
@@ -601,7 +608,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .timeline-body > p,
 .timeline-body > ul {
   margin-bottom: 0;
-  text-align: justify;
+  text-align: left;
 }
 
 .resume-info-right li {
@@ -650,6 +657,14 @@ h1, h2, h3, h4, h5, h6, figure {
     border-right-width: 14px;
     left: -14px;
     right: auto;
+  }
+
+  .resume-info-right li {
+    margin-left: -50px;
+  }
+  
+  .resume-info-left li {
+    margin-left: -50px;
   }
 }
 .progress-wrap {
@@ -701,6 +716,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .chart {
+  color: #fff;
   width: 160px;
   height: 160px;
   margin: 0 auto 40px auto;
@@ -711,7 +727,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: absolute;
   top: 50%;
   left: 0;
-  margin-top: -30px;
+  margin-top: -15px;
   width: 100%;
 }
 .chart span strong {
@@ -773,13 +789,14 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .work .desc {
     opacity: 1;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.8);
   }
   .work .desc h3 {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
   .work .desc span {
+    color: #000;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
