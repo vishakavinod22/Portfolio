@@ -80,7 +80,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t js-fullheight">
 						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/profile.jpeg);"></div>
+							<div class="profile-thumb" style="background: url(images/Fav24.png);"></div>
 							<h1><span>Vishaka Vinod</span></h1>
 							<h3><span>Software Developer</span></h3>
 							<p>
@@ -118,20 +118,28 @@
 				<div class="col-md-4">
 					<ul class="info">
 						<li><span class="first-block">Name:</span><span class="second-block">Vishaka Vinod</span></li>
-						<li><span class="first-block">Location:</span><span class="second-block">Halifax, Nova Scotia, Canada</span></li>
+						<li><span class="first-block">Location:</span><span class="second-block">Toronto, Ontario, Canada</span></li>
+						<li><span class="first-block">Experience:</span><span class="second-block">Software Engineer at Cognizant Technologies</span></li>
 						<li><span class="first-block">Education:</span><span class="second-block">Masters in Applied Computer Science at Dalhousie University</span></li>
 						<li><span class="first-block">Hobbies:</span><span class="second-block">Crochet, Dancings, Swimming, Reading</span></li>
-						<li><span class="first-block">Contact:</span><span class="second-block">vishakavinod22@gmail.com</span></li>
+						<!-- <li><span class="first-block">Contact:</span><span class="second-block">vishakavinod22@gmail.com</span></li> -->
 					</ul>
 				</div>
 				<div class="col-md-8">
-					<h2>Hello There!</h2>
+					<!-- <h2>Hello There!</h2>
 					<p>
 						I’m Vishaka, a versatile developer with a passion for mastering the latest web technologies to architecting cloud solutions and designing user-friendly applications, I approach everything I do with curiosity and creativity.
 					</p>
 					<p>
 						I am passionate about building things - from full-stack applications with React and Spring Boot to working with AWS infrastructure. I thrive in environments where I can tackle technical hurdles with efficiency and precision.
 						When I’m not buried in code, you’ll find me relaxing with a good thriller novel or diving into my latest passion - crocheting amigurumi projects.
+					</p> -->
+					<h2>Hello There!</h2>
+					<p>
+						I’m Vishaka, a versatile Software Developer with 3 years of full-stack experience. I specialize in building scalable backend REST APIs using Java Spring Boot, implementing CI/CD pipelines, and creating responsive front-end applications with React and JavaScript. Skilled in AWS and SQL/NoSQL databases, I focus on delivering high-performance systems that enhance user experience, improve operational efficiency, and drive business impact.
+					</p>
+					<p>
+						I am passionate about building things—from full-stack applications to cloud solutions. I thrive in environments where I can tackle technical hurdles with efficiency and precision. When I’m not buried in code, you’ll find me relaxing with a good thriller novel or diving into my latest passion—crocheting amigurumi projects.
 					</p>
 				</div>
 			</div>
@@ -145,11 +153,24 @@
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Projects</h2>
+					<div id="project-filters" style="margin-top: 15px;">
+						<button class="filter-btn" data-filter="all">All</button>
+						<button class="filter-btn" data-filter="react">React</button>
+						<button class="filter-btn" data-filter="angular">Angular</button>
+						<button class="filter-btn" data-filter="java">Java</button>
+						<button class="filter-btn" data-filter="spring">Spring Boot</button>
+						<button class="filter-btn" data-filter="node">NodeJS</button>
+						<button class="filter-btn" data-filter="python">Python</button>
+						<button class="filter-btn" data-filter="aws">AWS</button>
+						<button class="filter-btn" data-filter="gcp">GCP</button>
+						<button class="filter-btn" data-filter="devops">DevOps</button>
+						<button class="filter-btn" data-filter="kotlin">Kotlin</button>
+					</div>	
 				</div>
 			</div>
 			<div class="row">
 				<!-- Quackodoro -->
-				<div class="col-md-3 text-center col-padding animate-box">
+				<div class="col-md-3 text-center col-padding animate-box project-item" data-tags="react">
 					<a href="https://github.com/vishakavinod22/Quackodoro" target="_blank" class="work" style="background-image: url(images/duck.gif);">
 						<div class="desc">
 							<h3>Quackodoro</h3>
@@ -158,25 +179,25 @@
 					</a>
 				</div>
 				<!-- Task Tracker -->
-				<div class="col-md-3 text-center col-padding animate-box">
+				<div class="col-md-3 text-center col-padding animate-box project-item" data-tags="react, java, spring, aws">
 					<a href="https://github.com/vishakavinod22/Cloud-Term-Task-Tracker" target="_blank" class="work" style="background-image: url(images/tasktrack.jpg);">
 						<div class="desc">
 							<h3>TaskTrack</h3>
-							<span>ReactJS, Java Spring Boot, Amazon EC2, Aurora MySQL, Amazon S3, Amazon Textract, Amazon SNS, AWS Lambda, Amazon API Gateway, AWS CloudFormation</span>
+							<span>ReactJS, Java, Spring Boot, Amazon EC2, Aurora MySQL, Amazon S3, Amazon Textract, Amazon SNS, AWS Lambda, Amazon API Gateway, AWS CloudFormation</span>
 						</div>
 					</a>
 				</div>
 				<!-- Microservices with Kubernetes & Docker -->
-				<div class="col-md-3 text-center col-padding animate-box">
+				<div class="col-md-3 text-center col-padding animate-box project-item" data-tags="gcp, devops, java, spring">
 					<a href="https://github.com/vishakavinod22/Microservices-with-Kubernetes-Docker" target="_blank" class="work" style="background-image: url(images/KubernetesAndDocker.png);">
 						<div class="desc">
 							<h3>Microservices with Kubernetes & Docker</h3>
-							<span>Google Cloud Platform, Google Kubernetes Engine, Docket, Terraform, Java, Spring Boot</span>
+							<span>Google Cloud Platform, Google Kubernetes Engine, Docker, Terraform, Java, Spring Boot</span>
 						</div>
 					</a>
 				</div>
 				<!-- Encryption APIs with AWS Serverless Architecture -->
-				<div class="col-md-3 text-center col-padding animate-box">
+				<div class="col-md-3 text-center col-padding animate-box project-item" data-tags="aws, java">
 					<a href="https://github.com/vishakavinod22/Hashing-with-AWS-Serverless-Architecture" target="_blank" class="work" style="background-image: url(images/HashingLock.png);">
 						<div class="desc">
 							<h3>Encryption APIs with AWS Serverless Architecture</h3>
@@ -185,25 +206,25 @@
 					</a>
 				</div>
 				<!-- Flowers Almanac -->
-				<div class="col-md-3 text-center col-padding animate-box">
+				<div class="col-md-3 text-center col-padding animate-box project-item" data-tags="react, java, spring, python, aws">
 					<a href="https://github.com/vishakavinod22/FlowersAlmanac" target="_blank" class="work" style="background-image: url(images/flowersAlmanac.png);">
 						<div class="desc">
 							<h3>Flowers Almanac</h3>
-							<span>ReactJS, Java Spring Boot, Python, Amazon DynamoDB, Amazon S3, AWS Lambda, Amazon API Gateway</span>
+							<span>ReactJS, Java, Spring Boot, Python, Amazon DynamoDB, Amazon S3, AWS Lambda, Amazon API Gateway</span>
 						</div>
 					</a>
 				</div>
 				<!-- FurScan -->
-				<div class="col-md-3 text-center col-padding animate-box">
+				<div class="col-md-3 text-center col-padding animate-box project-item" data-tags="angular, java, spring, python, aws">
 					<a href="https://github.com/vishakavinod22/FurScan" target="_blank" class="work" style="background-image: url(images/furscan.png);">
 						<div class="desc">
 							<h3>FurScan</h3>
-							<span>Angular, Java Spring Boot, Python, Amazon S3</span>
+							<span>Angular, Java, Spring Boot, Python, Amazon S3</span>
 						</div>
 					</a>
 				</div>
 				<!-- Event Aura Login Page -->
-				<div class="col-md-3 text-center col-padding animate-box">
+				<div class="col-md-3 text-center col-padding animate-box project-item" data-tags="react, node">
 					<a href="https://github.com/vishakavinod22/CSCI_5709_Assignments/tree/main/Assignment1/user-authentication" target="_blank" class="work" style="background-image: url(images/eventaura.png);">
 						<div class="desc">
 							<h3>UI/UX Design for <br/> User Login</h3>
@@ -212,7 +233,7 @@
 					</a>
 				</div>
 				<!-- Globe Trek -->
-				<div class="col-md-3 text-center col-padding animate-box">
+				<div class="col-md-3 text-center col-padding animate-box project-item" data-tags="kotlin">
 					<a href="https://github.com/vishakavinod22/GlobeTrek" target="_blank" class="work" style="background-image: url(images/continents.png);">
 						<div class="desc">
 							<h3>GlobeTrek Android Application</h3>
@@ -221,7 +242,7 @@
 					</a>
 				</div>
 				<!-- Expense Logger -->
-				<div class="col-md-3 text-center col-padding animate-box">
+				<div class="col-md-3 text-center col-padding animate-box project-item" data-tags="kotlin">
 					<a href="https://github.com/vishakavinod22/Expense-Logger-App" target="_blank" class="work" style="background-image: url(images/ExpenseLogger.png);">
 						<div class="desc">
 							<h3>Expense Logger <br/> Android Application</h3>
@@ -249,6 +270,42 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- Minimal JS for filtering -->
+	<style>
+		/* Simple styling for active button */
+		.filter-btn.active {
+			background-color: #270511;
+			color: white;
+		}
+	</style>
+	<script>
+		const filterButtons = document.querySelectorAll('.filter-btn');
+		const projects = document.querySelectorAll('.project-item');
+
+		const allBtn = document.querySelector('.filter-btn[data-filter="all"]');
+		allBtn.classList.add('active');
+
+		projects.forEach(project => project.style.display = 'block');
+
+		filterButtons.forEach(btn => {
+			btn.addEventListener('click', () => {
+				const filter = btn.getAttribute('data-filter');
+
+				// Show/hide projects
+				projects.forEach(project => {
+					const tags = project.getAttribute('data-tags').split(',').map(tag => tag.trim());
+					project.style.display = (filter === 'all' || tags.includes(filter)) ? 'block' : 'none';
+				});
+
+				// Update active button
+				filterButtons.forEach(b => b.classList.remove('active'));
+				btn.classList.add('active');
+			});
+		});
+
+	</script>
+
 
 	<!-- Resume -->
 	<div id="resume"></div>
