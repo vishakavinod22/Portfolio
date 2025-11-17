@@ -44,6 +44,7 @@
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/carousel.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -164,7 +165,7 @@
 						<button class="filter-btn" data-filter="python">Python</button>
 						<button class="filter-btn" data-filter="aws">AWS</button>
 						<button class="filter-btn" data-filter="gcp">GCP</button>
-						<button class="filter-btn" data-filter="devops">DevOps</button>
+						<!-- <button class="filter-btn" data-filter="devops">DevOps</button> -->
 						<button class="filter-btn" data-filter="kotlin">Kotlin</button>
 					</div>	
 				</div>
@@ -247,7 +248,7 @@
 					<a href="https://github.com/vishakavinod22/Expense-Logger-App" target="_blank" class="work" style="background-image: url(images/ExpenseLogger.png);">
 						<div class="desc">
 							<h3>Expense Logger <br/> Android Application</h3>
-							<span>Kotlin, Android Studio</span>
+							<span>Kotlin, XML, Android Studio</span>
 						</div>
 					</a>
 				</div>
@@ -439,7 +440,7 @@
 									<p>
 										<ul class="resume-info-left">
 											<li>CGPA: 4.20 / 4.30</li>
-											<li>
+											<!-- <li>
 												Relevant Courses: 
 												<ul style="list-style-type: circle">
 													<li>Advanced Topics in Software Development</li>
@@ -452,7 +453,7 @@
 													<li>Serverless Data Processing</li>
 													<li>Advanced Topics in Web Development</li>
 												</ul>
-											</li>
+											</li> -->
 										</ul>
 									</p>
 								</div>
@@ -471,7 +472,7 @@
 											<li>
 												CGPA: 3.75 / 4.0
 											</li>
-											<li>
+											<!-- <li>
 												Relevant Courses:
 												<ul style="list-style-type: circle">
 													<li>Operating Systems</li>
@@ -491,7 +492,7 @@
 													<li>Software Testing</li>
 													<li>Digital Marketing</li>
 												</ul>
-											</li>
+											</li> -->
 										</ul>
 									</p>
 								</div>
@@ -716,59 +717,252 @@
 	</div> -->
 
 	<!-- Posts on Medium -->
+	<div id="posts"></div>
 	<div id="fh5co-blog" class="fh5co-bg-dark">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Posts  & Blogs</h2>
+					<h2>Posts & Blogs</h2>
 					<p>A collection of my articles, updates, and insights shared across LinkedIn and other platforms.</p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/graduation.png);"></a>
-						<div class="blog-text">
-							<span class="posted_on">June 21, 2025</span>
-							<h3><a href="#">Graduated 🎓</a></h3>
-							<p>It has been a journey full of late nights, hard work, and learning. I am proud of this accomplishment...</p>
-							<ul class="stuff">
-								<li><a href="https://www.linkedin.com/posts/vishakavinod_i-am-so-happy-to-share-that-i-have-graduated-activity-7347283280544620544-KxpO?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACvPB50B1tzdIUJeC1hibmVnUKUvzQWo3uE" target="_blank" rel="noopener noreferrer">
-									Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
+
+			<div class="carousel-container">
+				<div class="carousel-wrapper" id="carouselWrapper">
+					<!-- Slide 1 -->
+					<div class="carousel-slide">
+						<div class="col-md-4">
+							<div class="fh5co-blog animate-box">
+								<a href="#" class="blog-bg" style="background-image: url(images/DevFest.jpg);"></a>
+								<div class="blog-text">
+									<span class="posted_on">November 17, 2025</span>
+									<h3><a href="#">Google DevFest 2025</a></h3>
+									<p>I participated in a hands-on workshop led by Mohammad Al-Ansari, where we used Google Gemini CLI, MCP...</p>
+									<ul class="stuff">
+										<li><a href="https://www.linkedin.com/posts/vishakavinod_this-weekend-i-had-the-opportunity-to-attend-activity-7396047783314485249-6S8k?utm_source=share&utm_medium=member_desktop&rcm=ACoAACvPB50B1tzdIUJeC1hibmVnUKUvzQWo3uE" target="_blank" rel="noopener noreferrer">
+											Read More<i class="icon-arrow-right22"></i>
+										</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="fh5co-blog animate-box">
+								<a href="#" class="blog-bg" style="background-image: url(images/graduation.png);"></a>
+								<div class="blog-text">
+									<span class="posted_on">June 21, 2025</span>
+									<h3><a href="#">Graduated 🎓</a></h3>
+									<p>It has been a journey full of late nights, hard work, and learning. I am proud of this accomplishment...</p>
+									<ul class="stuff">
+										<li><a href="https://www.linkedin.com/posts/vishakavinod_i-am-so-happy-to-share-that-i-have-graduated-activity-7347283280544620544-KxpO?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACvPB50B1tzdIUJeC1hibmVnUKUvzQWo3uE" target="_blank" rel="noopener noreferrer">
+											Read More<i class="icon-arrow-right22"></i>
+										</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="fh5co-blog animate-box">
+								<a href="#" class="blog-bg" style="background-image: url(images/quackodoro.png);"></a>
+								<div class="blog-text">
+									<span class="posted_on">April 02, 2025</span>
+									<h3><a href="#">Quackodoro</a></h3>
+									<p>As I approach graduation, I've been eager to expand my skill set by building fun and engaging...</p>
+									<ul class="stuff">
+										<li><a href="https://www.linkedin.com/posts/vishakavinod_quackodoro-activity-7312968660510232576-Yqt3?utm_source=share&utm_medium=member_desktop&rcm=ACoAACvPB50B1tzdIUJeC1hibmVnUKUvzQWo3uE" target="_blank" rel="noopener noreferrer">
+											Read More<i class="icon-arrow-right22"></i>
+										</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/quackodoro.png);"></a>
-						<div class="blog-text">
-							<span class="posted_on">April 02, 2025</span>
-							<h3><a href="#">Quackodoro</a></h3>
-							<p>As I approach graduation, I’ve been eager to expand my skill set by building fun and engaging...</p>
-							<ul class="stuff">
-								<li><a href="https://www.linkedin.com/posts/vishakavinod_quackodoro-activity-7312968660510232576-Yqt3?utm_source=share&utm_medium=member_desktop&rcm=ACoAACvPB50B1tzdIUJeC1hibmVnUKUvzQWo3uE" target="_blank" rel="noopener noreferrer">
-									Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
+
+					<!-- Slide 2 -->
+					<div class="carousel-slide">
+						<div class="col-md-4">
+							<div class="fh5co-blog animate-box">
+								<a href="#" class="blog-bg" style="background-image: url(images/backtobasics.png);"></a>
+								<div class="blog-text">
+									<span class="posted_on">November 09, 2024</span>
+									<h3><a href="#">Back to Basics</a></h3>
+									<p>My coding journey started back in 2015 when I took my first coding class in high school. My teacher...</p>
+									<ul class="stuff">
+										<li><a href="https://www.linkedin.com/pulse/back-basics-vishaka-vinod-w9dje" target="_blank" rel="noopener noreferrer">
+											Read More<i class="icon-arrow-right22"></i>
+										</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="fh5co-blog animate-box">
+								<a href="#" class="blog-bg" style="background-image: url(images/DevFest.jpg);"></a>
+								<div class="blog-text">
+									<span class="posted_on">November 17, 2025</span>
+									<h3><a href="#">Google DevFest 2025</a></h3>
+									<p>I participated in a hands-on workshop led by Mohammad Al-Ansari, where we used Google Gemini CLI, MCP...</p>
+									<ul class="stuff">
+										<li><a href="https://www.linkedin.com/posts/vishakavinod_this-weekend-i-had-the-opportunity-to-attend-activity-7396047783314485249-6S8k?utm_source=share&utm_medium=member_desktop&rcm=ACoAACvPB50B1tzdIUJeC1hibmVnUKUvzQWo3uE" target="_blank" rel="noopener noreferrer">
+											Read More<i class="icon-arrow-right22"></i>
+										</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="fh5co-blog animate-box">
+								<a href="#" class="blog-bg" style="background-image: url(images/graduation.png);"></a>
+								<div class="blog-text">
+									<span class="posted_on">June 21, 2025</span>
+									<h3><a href="#">Graduated 🎓</a></h3>
+									<p>It has been a journey full of late nights, hard work, and learning. I am proud of this accomplishment...</p>
+									<ul class="stuff">
+										<li><a href="https://www.linkedin.com/posts/vishakavinod_i-am-so-happy-to-share-that-i-have-graduated-activity-7347283280544620544-KxpO?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACvPB50B1tzdIUJeC1hibmVnUKUvzQWo3uE" target="_blank" rel="noopener noreferrer">
+											Read More<i class="icon-arrow-right22"></i>
+										</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/backtobasics.png);"></a>
-						<div class="blog-text">
-							<span class="posted_on">November 09, 2024</span>
-							<h3><a href="#">Back to Basics</a></h3>
-							<p>My coding journey started back in 2015 when I took my first coding class in high school. My teacher...</p>
-							<ul class="stuff">
-								<li><a href=" https://www.linkedin.com/pulse/back-basics-vishaka-vinod-w9dje" target="_blank" rel="noopener noreferrer">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
+					
+					<!-- Slide 3 (loops back) -->
+					<div class="carousel-slide">
+						<div class="col-md-4">
+							<div class="fh5co-blog animate-box">
+								<a href="#" class="blog-bg" style="background-image: url(images/quackodoro.png);"></a>
+								<div class="blog-text">
+									<span class="posted_on">April 02, 2025</span>
+									<h3><a href="#">Quackodoro</a></h3>
+									<p>As I approach graduation, I've been eager to expand my skill set by building fun and engaging...</p>
+									<ul class="stuff">
+										<li><a href="https://www.linkedin.com/posts/vishakavinod_quackodoro-activity-7312968660510232576-Yqt3?utm_source=share&utm_medium=member_desktop&rcm=ACoAACvPB50B1tzdIUJeC1hibmVnUKUvzQWo3uE" target="_blank" rel="noopener noreferrer">
+											Read More<i class="icon-arrow-right22"></i>
+										</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="fh5co-blog animate-box">
+								<a href="#" class="blog-bg" style="background-image: url(images/backtobasics.png);"></a>
+								<div class="blog-text">
+									<span class="posted_on">November 09, 2024</span>
+									<h3><a href="#">Back to Basics</a></h3>
+									<p>My coding journey started back in 2015 when I took my first coding class in high school. My teacher...</p>
+									<ul class="stuff">
+										<li><a href="https://www.linkedin.com/pulse/back-basics-vishaka-vinod-w9dje" target="_blank" rel="noopener noreferrer">
+											Read More<i class="icon-arrow-right22"></i>
+										</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="fh5co-blog animate-box">
+								<a href="#" class="blog-bg" style="background-image: url(images/DevFest.jpg);"></a>
+								<div class="blog-text">
+									<span class="posted_on">November 17, 2025</span>
+									<h3><a href="#">Google DevFest 2025</a></h3>
+									<p>I participated in a hands-on workshop led by Mohammad Al-Ansari, where we used Google Gemini CLI, MCP...</p>
+									<ul class="stuff">
+										<li><a href="https://www.linkedin.com/posts/vishakavinod_this-weekend-i-had-the-opportunity-to-attend-activity-7396047783314485249-6S8k?utm_source=share&utm_medium=member_desktop&rcm=ACoAACvPB50B1tzdIUJeC1hibmVnUKUvzQWo3uE" target="_blank" rel="noopener noreferrer">
+											Read More<i class="icon-arrow-right22"></i>
+										</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+
+			<div class="carousel-controls">
+				<button class="carousel-btn" id="prevBtn">&larr;</button>
+				<button class="carousel-btn" id="nextBtn">&rarr;</button>
+			</div>
+
+			<div class="carousel-indicators" id="indicators"></div>
 		</div>
 	</div>
+
+	<script>
+		const wrapper = document.getElementById('carouselWrapper');
+		const prevBtn = document.getElementById('prevBtn');
+		const nextBtn = document.getElementById('nextBtn');
+		const indicatorsContainer = document.getElementById('indicators');
+		const slides = document.querySelectorAll('.carousel-slide');
+		
+		let currentIndex = 0;
+		let autoSlideInterval;
+
+		// Create indicators
+		slides.forEach((_, index) => {
+			const indicator = document.createElement('div');
+			indicator.classList.add('indicator');
+			if (index === 0) indicator.classList.add('active');
+			indicator.addEventListener('click', () => goToSlide(index));
+			indicatorsContainer.appendChild(indicator);
+		});
+
+		const indicators = document.querySelectorAll('.indicator');
+
+		function updateCarousel() {
+			wrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+			
+			indicators.forEach((indicator, index) => {
+				indicator.classList.toggle('active', index === currentIndex);
+			});
+		}
+
+		function nextSlide() {
+			currentIndex = (currentIndex + 1) % slides.length;
+			updateCarousel();
+		}
+
+		function prevSlide() {
+			currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+			updateCarousel();
+		}
+
+		function goToSlide(index) {
+			currentIndex = index;
+			updateCarousel();
+			resetAutoSlide();
+		}
+
+		function startAutoSlide() {
+			autoSlideInterval = setInterval(nextSlide, 4000);
+		}
+
+		function resetAutoSlide() {
+			clearInterval(autoSlideInterval);
+			startAutoSlide();
+		}
+
+		prevBtn.addEventListener('click', () => {
+			prevSlide();
+			resetAutoSlide();
+		});
+
+		nextBtn.addEventListener('click', () => {
+			nextSlide();
+			resetAutoSlide();
+		});
+
+		// Pause on hover
+		wrapper.addEventListener('mouseenter', () => {
+			clearInterval(autoSlideInterval);
+		});
+
+		wrapper.addEventListener('mouseleave', () => {
+			startAutoSlide();
+		});
+
+		// Start automatic sliding
+		startAutoSlide();
+	</script>
 	
 	<!-- <div id="fh5co-started" class="fh5co-bg-dark">
 		<div class="overlay"></div>
