@@ -284,6 +284,48 @@
 	<script>
 		const filterButtons = document.querySelectorAll('.filter-btn');
 		const projects = document.querySelectorAll('.project-item');
+	
+		const allBtn = document.querySelector('.filter-btn[data-filter="all"]');
+		allBtn.classList.add('active');
+	
+		// Force show all projects on initial load
+		projects.forEach(project => {
+			project.style.display = 'block';
+			project.style.opacity = '1';
+		});
+	
+		filterButtons.forEach(btn => {
+			btn.addEventListener('click', () => {
+				const filter = btn.getAttribute('data-filter');
+	
+				// Show/hide projects
+				projects.forEach(project => {
+					const tags = project.getAttribute('data-tags');
+					
+					if (filter === 'all') {
+						project.style.display = 'block';
+						project.style.opacity = '1';
+					} else {
+						// Check if the tag exists in the data-tags attribute
+						const regex = new RegExp('\\b' + filter + '\\b', 'i');
+						if (regex.test(tags)) {
+							project.style.display = 'block';
+							project.style.opacity = '1';
+						} else {
+							project.style.display = 'none';
+						}
+					}
+				});
+	
+				// Update active button
+				filterButtons.forEach(b => b.classList.remove('active'));
+				btn.classList.add('active');
+			});
+		});
+	</script>
+	<!-- <script>
+		const filterButtons = document.querySelectorAll('.filter-btn');
+		const projects = document.querySelectorAll('.project-item');
 
 		const allBtn = document.querySelector('.filter-btn[data-filter="all"]');
 		allBtn.classList.add('active');
@@ -306,7 +348,7 @@
 			});
 		});
 
-	</script>
+	</script> -->
 
 
 	<!-- Resume -->
